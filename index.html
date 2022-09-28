@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mi primera web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            table, th, td 
+            {
+                border: 1px solid black;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Tables -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Hola Beats</td>
+                    <td>Gratis</td>
+                </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>PC Gaming</td>
+                    <td>$5000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>Total $6000</td>
+            </tfoot>
+        </table>
+        
+        <!-- UL lista no ordenada -->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!-- OL lista ordenada -->
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>
+                <ol>
+                    <li>Subelemento 1</li>
+                    <li>Subelemento 2</li>
+                    <li>Subelemento 3</li>
+                    <li>Subelemento 4</li>
+                </ol>
+            </li>
+        </ol>
+        <form action="/formulario" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@dominio.com" />
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="***********" />
+            <br>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Escribenos tus comentarios"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h1>Mi primer heading</h1>
+        <h2>Mi segundo heading</h2>
+        <h3>Mi tercer heading</h3>
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quiento heading</h5>
+        <h6>Mi sexto heading</h6>
+
+        <p>Mi primer parrafo.</p>
+        <p>Mi segundo parrafo en una segunda linea.</p>
+        <hr>
+        <h2>Mi sub-segundo heading</h2>
+        <p>Mi tercer parrafo.</p>
+        <p>
+            Este texto es <span style="color: blue;">mucho más largo</span> 
+            <br>y es para la etiqueta de span!
+        </p>
+
+        <!-- Esto es un comentario y no aparce en la pagina web. -->
+        
+        <a target="_blank" href="https://www.google.com.mx">Ir a Google!</a>
+
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png&f=1&nofb=1&ipt=6f3395b0ff536112f6f299a7c2dfc35cf6a3e472743b37ba7e3629c8f3107891&ipo=images" alt="google.png" width="400">
+    </body>
+</html>
